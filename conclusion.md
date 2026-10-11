@@ -1,6 +1,6 @@
 ### Interpretations and Conclusions
 
-The empirical results from this assignment reveal some fascinating dynamics about how recursive tree-type networks learn, memorize, and ultimately generalize.
+The empirical results from this assignment reveal some fascinating dynamics about how recursive tree-type networks learn, memorize, and ultimately generalize. 
 
 When analyzing the double descent phenomenon, the initial segment of the curve behaves exactly as classical statistical learning theory predicts: as the number of hidden units increases, the model begins to memorize noise, causing a spike in the generalization test error. This perfectly aligns with the foundational principle that using all available degrees of freedom leads to overfitting. Classical theory dictates that a learning machine's complexity is measured by its VC dimension, and unchecked complexity harms prediction reliability. However, what makes these results so compelling is what happens once we push the network's capacity past the interpolation threshold. When the network becomes massively over-parameterized beyond the point of 100% training accuracy, the test error begins to drop a second time. With an abundance of excess capacity, the network's gradient descent optimization naturally gravitates toward the "smoothest," most generalized function that can still separate the data, rather than contorting itself to fit edge cases.
 
